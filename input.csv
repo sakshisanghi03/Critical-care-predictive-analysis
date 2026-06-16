@@ -1,0 +1,2 @@
+﻿SUBJECT_ID,HADM_ID,VISIT_ID,MONITORTIME,ITEMID_VALUE
+37,102040,1,8/12/71 15:20,"item_id1=SV3, value1=1; item_id2=SV3, value2=2; item_id3=SV2, value3=3; item_id4=SV2, value4=4; item_id5=SV1, value5=5; item_id6=SV1, value6=6; item_id7=SV4, value7=7; item_id8=SV6, value8=8; item_id9=SV7, value9=9; item_id10=SV7, value10=10; item_id11=SV1, value10=10; item_id11=SV1, value10=2"
