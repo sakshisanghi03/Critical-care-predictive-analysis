@@ -148,34 +148,97 @@ Evaluation Metrics:
 
 ---
 
-## Extension Work
+# Results
 
-The project was further extended to improve baseline performance through:
+## ICU Mortality Prediction
 
-### Mortality Model Refinement
+The mortality prediction study evaluated multiple machine learning models using baseline training, hyperparameter tuning, SMOTE oversampling, and threshold optimization.
 
-- Advanced Feature Engineering
-- Hyperparameter Tuning
-- Cross Validation
-- Model Comparison
+### Best Mortality Model
 
-### Length of Stay Model Refinement
+**Random Forest + SMOTE + Threshold = 0.35**
 
-- Feature Selection
-- Model Optimization
-- Error Analysis
-- Performance Improvement
+| Metric | Value |
+|----------|----------|
+| Accuracy | 95.74% |
+| Recall | 35.35% |
+| Precision | 23.03% |
+| F1 Score | 27.89% |
+| ROC-AUC | 0.8708 |
+| PR-AUC | 0.1565 |
+| Balanced Accuracy | 0.6627 |
+| MCC | 0.2642 |
 
-### Future Scope
+### Key Findings
 
-Potential future enhancements include:
+- Random Forest consistently outperformed Logistic Regression.
+- SMOTE improved minority-class detection.
+- Threshold optimization significantly improved recall and F1-score.
+- The final Random Forest model achieved the highest overall ranking.
 
-- Time-Series Modeling
-- LSTM Networks
-- GRU Networks
-- Temporal Patient Monitoring Analysis
-- Explainable AI Techniques
-- Real-Time ICU Risk Prediction
+---
+
+## ICU Length of Stay (LOS) Prediction
+
+Several machine learning models were evaluated for predicting patient length of stay.
+
+### Best LOS Model
+
+**Random Forest (Tuned + Threshold = 0.35)**
+
+| Metric | Value |
+|----------|----------|
+| Accuracy | 70.62% |
+| Recall | 87.70% |
+| Precision | 65.37% |
+| F1 Score | 74.90% |
+| ROC-AUC | 0.8129 |
+| PR-AUC | 0.8149 |
+| Balanced Accuracy | 70.63% |
+| MCC | 0.4389 |
+
+### Key Findings
+
+- Random Forest achieved the strongest overall performance.
+- Hyperparameter tuning improved model stability.
+- Threshold optimization improved sensitivity while maintaining acceptable precision.
+- Logistic Regression provided a strong baseline but was consistently outperformed by Random Forest.
+
+---
+
+## Model Comparison Summary
+
+| Task | Best Model | Key Metric |
+|--------|------------|------------|
+| Mortality Prediction | Random Forest + SMOTE + Threshold 0.35 | ROC-AUC = 0.8708 |
+| LOS Prediction | Random Forest + Tuned + Threshold 0.35 | F1 = 0.749 |
+
+---
+## Project Highlights
+
+✔ Predicted ICU Mortality Risk using Machine Learning
+
+✔ Predicted ICU Length of Stay (LOS)
+
+✔ Applied SMOTE for class imbalance handling
+
+✔ Performed Hyperparameter Optimization
+
+✔ Achieved ROC-AUC of 0.8708 for Mortality Prediction
+
+✔ Achieved F1 Score of 0.749 for LOS Prediction
+
+✔ Extended baseline models through Summer Semester refinement work
+
+---
+
+## Future Work
+
+- Temporal Modeling using LSTM/GRU networks
+- Explainable AI (SHAP/LIME)
+- ICU Risk Stratification Dashboard
+- Real-time Clinical Decision Support
+- Multi-horizon Patient Outcome Forecasting
 
 ---
 
