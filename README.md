@@ -148,7 +148,7 @@ Evaluation Metrics:
 
 ---
 
-## Summer Extension Work
+## Extension Work
 
 The project was further extended to improve baseline performance through:
 
